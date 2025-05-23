@@ -8,19 +8,11 @@ import {
   RiGithubLine,
   RiLinkedinFill,
 } from "react-icons/ri";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Socials = () => {
   return (
     <div className="flex items-center gap-4 text-2xl">
-      <Link
-        href={"https://t.me/JesusHND"}
-        rel="noopener noreferrer"
-        target="_blank"
-        className="hover:text-accent transition-all duration-500 "
-      >
-        <RiTelegramLine />
-      </Link>
-
       <Link
         href={"http://Wa.me/+989120597807"}
         rel="noopener noreferrer"
@@ -28,6 +20,15 @@ const Socials = () => {
         className="hover:text-accent transition-all duration-500 "
       >
         <RiWhatsappLine />
+      </Link>
+
+      <Link
+        href={"https://t.me/JesusHND"}
+        rel="noopener noreferrer"
+        target="_blank"
+        className="hover:text-accent transition-all duration-500 "
+      >
+        <FaTelegramPlane />
       </Link>
 
       <Link
