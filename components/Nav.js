@@ -43,8 +43,8 @@ const Nav = () => {
           return (
             <Link
               className={`${
-                link.path === pathname && "text-cyan-500"
-              } relative flex items-center group hover:text-cyan-500 justify-center xl:justify-center py-3 xl:py-0 transition-all duration-400`}
+                link.path === pathname && "text-accent"
+              } transition-all duration-500 relative flex items-center group hover:text-accent justify-center xl:justify-center py-3 xl:py-0`}
               href={link.path}
               key={index}
             >

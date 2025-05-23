@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 // icons
-import {} from "react-icons/hi2"
+import {} from "react-icons/hi2";
 
 const ProjectsBtn = () => {
   return (
     <div className="mx-auto xl:mx-0 ">
       <Link
         href={"/work"}
-        className="transition delay-150 duration-300 ease-in-out hover:scale-105 relative w-[185px] h-[188px] flex justify-center items-center bg-circleStar bg-cover bg bg-no-repeat"
+        className="transition delay-150 duration-500 ease-in-out hover:scale-105 relative w-[185px] h-[188px] flex justify-center items-center bg-circleStar bg-cover bg bg-no-repeat"
       >
         <Image
           src={"/rounded-text.png"}

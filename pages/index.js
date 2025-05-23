@@ -37,9 +37,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-s xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-            asperiores illo quis ipsum ipsam adipisci nostrum tenetur obcaecati
-            aspernatur quas?
+            {`I'm an ambitious Software Engineer with over 3 years of specialized experience in software and web development. Passionate about continuous learning, I consistently apply innovative and efficient solutions to complex technical challenges.
+            In previous roles, I've thrived in dynamic environments, helping startups and established companies meet their business objectives through meticulously designing, developing, testing, documenting, maintaining, and debugging impactful software solutions.`}
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -57,7 +56,23 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div></div>
+      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+        {/* bg image */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+        {/* particles */}
+        <ParticlesContainer/>
+        {/* Avatar */}
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          transition={{duration: 1, ease:"easeInOut"}}
+          className="w-full h-full max-w-[408px] max-h-[612px]  absolute -bottom-32 lg:bottom-0 lg:right-[20%]"
+        >
+          <Avatar />
+        </motion.div>
+      </div>
     </div>
   );
 };
