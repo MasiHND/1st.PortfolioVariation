@@ -143,7 +143,7 @@ const About = () => {
         {/* text */}
         <div className="flex flex-1 flex-col justify-center">
           <motion.h2
-            variants={fadeIn("down", 0.3)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -153,7 +153,7 @@ const About = () => {
             magnificent designs.
           </motion.h2>
           <motion.p
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("right", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -233,7 +233,7 @@ const About = () => {
         {/* info */}
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <motion.div
-            variants={fadeIn("left", 0.6)}
+            variants={fadeIn("left", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -257,7 +257,7 @@ const About = () => {
             })}
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.7)}
+            variants={fadeIn("left", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
