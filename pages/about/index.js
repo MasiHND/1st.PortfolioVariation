@@ -48,7 +48,7 @@ const aboutData = [
         icons: [<SiNextdotjs />, <SiWordpress />],
       },
       {
-        title: "Programming Language",
+        title: "Languages",
         icons: [
           <SiJavascript />,
           <SiTypescript />,
@@ -88,12 +88,12 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Bachelor of Software Eng. - USC University",
+        title: "Software Eng. - USC University",
         stage: "2020 - 2023",
       },
       {
-        title: "Bachelor of Aerospace Eng. - AUT University",
-        stage: "2009",
+        title: "Aerospace Eng. - AUT University",
+        stage: "2014 - 2018",
       },
     ],
   },
@@ -231,7 +231,7 @@ const About = () => {
           </div>
         </div>
         {/* info */}
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-1">
           <motion.div
             variants={fadeIn("left", 0.3)}
             initial="hidden"
@@ -267,7 +267,7 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/80"
+                  className="flex flex-1 flex-row max-w-max gap-x-2 items-center text-white/80"
                 >
                   {/* title */}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
