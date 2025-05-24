@@ -2,16 +2,6 @@ import React, { useState } from "react";
 
 // icons
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-  FaAws,
-} from "react-icons/fa";
-
-import {
   SiNextdotjs,
   SiSupabase,
   SiMysql,
@@ -25,6 +15,12 @@ import {
   SiReactquery,
   SiCanva,
   SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiWordpress,
+  SiFigma,
 } from "react-icons/si";
 
 //  data
@@ -35,9 +31,9 @@ const aboutData = [
       {
         title: "Front-end",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaReact />,
+          <SiHtml5 />,
+          <SiCss3 />,
+          <SiReact />,
           <SiTailwindcss />,
           <SiReactquery />,
           <SiRedux />,
@@ -45,16 +41,16 @@ const aboutData = [
       },
       {
         title: "Back-end",
-        icons: [<SiSupabase />, <FaAws />, <SiMysql />],
+        icons: [<SiSupabase />,  <SiMysql />],
       },
       {
         title: "Frame Works",
-        icons: [<SiNextdotjs />, <FaWordpress />],
+        icons: [<SiNextdotjs />, <SiWordpress />],
       },
       {
         title: "Programming Language",
         icons: [
-          <FaJs />,
+          <SiJavascript />,
           <SiTypescript />,
           <SiPython />,
           <SiCplusplus />,
@@ -63,7 +59,7 @@ const aboutData = [
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />, <SiCanva />],
+        icons: [<SiFigma />, <SiAdobexd />, <SiAdobephotoshop />, <SiCanva />],
       },
     ],
   },
@@ -139,7 +135,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[120px]"
+        className="hidden xl:flex absolute bottom-0 -left-[0px] h-[40%]"
       >
         <Avatar />
       </motion.div>
@@ -169,9 +165,68 @@ const About = () => {
             consumer use.
           </motion.p>
           {/* counter */}
-          <div>
-            <div>
-              <div></div>
+          <div className="hidden lg:flex lg:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            <div className="flex flex-1 gap-x-6">
+              {/* experience */}
+              <motion.div
+                variants={fadeIn("up", 0.3)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={4} duration={5} />+
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Years of experience
+                </div>
+              </motion.div>
+              {/* companies */}
+              <motion.div
+                variants={fadeIn("up", 0.5)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={6} duration={5} />+
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  companies worked with
+                </div>
+              </motion.div>
+              {/* clients */}
+              <motion.div
+                variants={fadeIn("up", 0.7)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={24} duration={5} />+
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Satisfied clients
+                </div>
+              </motion.div>
+              {/* projects */}
+              <motion.div
+                variants={fadeIn("up", 0.9)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={60} duration={5} />+
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  successful projects
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -190,8 +245,8 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    `text-accent after:w-full after:bg-cyan-400 after:transition-all after:duration-500`
-                  } cursor-pointer capitalize xl:text-lg relative after:w-4 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                    `text-accent after:w-full after:bg-cyan-500 after:transition-all after:duration-500`
+                  } cursor-pointer capitalize xl:text-lg relative after:w-4 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 after:rounded-3xl`}
                   onClick={() => {
                     setIndex(itemIndex);
                   }}
@@ -224,7 +279,7 @@ const About = () => {
                       return (
                         <div
                           key={iconIndex}
-                          className="transition-all duration-500 text-2xl text-white hover:text-accent"
+                          className="transition-all duration-300 text-2xl text-white hover:text-accent"
                         >
                           {icon}
                         </div>
