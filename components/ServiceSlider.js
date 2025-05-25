@@ -6,11 +6,11 @@ import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
 
 // icons
+import { RiBugFill } from "react-icons/ri";
 import {
   RxCrop,
   RxPencil2,
   RxDesktop,
-  RxReader,
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
@@ -18,10 +18,16 @@ import {
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
+    icon: <RxDesktop />,
+    title: "Development",
     description:
-      "Craft a bold identity that connects, communicates, and captivates your audience across every screen, platform, and digital interaction.",
+      "From idea to launch, build clean, scalable, and high-performance web and software solutions tailored for your success.",
+  },
+  {
+    icon: <RiBugFill />,
+    title: "Maintenance",
+    description:
+      "Expert debugging and maintenance services to fix bugs fast and keep your software running smoothly, always.",
   },
   {
     icon: <RxPencil2 />,
@@ -30,16 +36,16 @@ const serviceData = [
       "Create intuitive, pixel-perfect designs that turn visitors into loyal users through beauty, clarity, and seamless user experience.",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description:
-      "From idea to launch, build clean, scalable, and high-performance web and software solutions tailored for your success.",
-  },
-  {
     icon: <RxRocket />,
     title: "SEO",
     description:
       "Boost your visibility, drive organic traffic, and climb search rankings with smart, ethical SEO that delivers long-term results.",
+  },
+  {
+    icon: <RxCrop />,
+    title: "Branding",
+    description:
+      "Craft a bold identity that connects, communicates, and captivates your audience across every screen, platform, and digital interaction.",
   },
 ];
 
