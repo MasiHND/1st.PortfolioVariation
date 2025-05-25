@@ -135,7 +135,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[0px] h-[40%]"
+        className="hidden xl:flex absolute bottom-0 -left-[0px] h-[60%]"
       >
         <Avatar />
       </motion.div>
@@ -147,7 +147,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 capitalize"
+            className="h2 xl:h2 lg:text-4xl lg:mb-4 lg:font-bold capitalize"
           >
             Captivating <span className="text-accent">stories</span> birth
             magnificent designs.

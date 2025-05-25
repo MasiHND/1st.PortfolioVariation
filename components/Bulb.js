@@ -1,5 +1,16 @@
+// next Image
+import Image from "next/image";
+
 const Bulb = () => {
-  return <div>Bulb</div>;
+  return (
+    <Image
+      src={"/bulb.png"}
+      width={260}
+      height={200}
+      alt=""
+      className="w-full h-full"
+    />
+  );
 };
 
 export default Bulb;
