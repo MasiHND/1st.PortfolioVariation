@@ -24,7 +24,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 z-10"
           >
             Transforming Ideas <br /> into{" "}
             <span className="text-accent">Digital Reality</span>
@@ -35,7 +35,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-s xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-s xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-10"
           >
             {`I'm an ambitious Software Engineer with over 3 years of specialized experience in software and web development. Passionate about continuous learning, I consistently apply innovative and efficient solutions to complex technical challenges.
             In previous roles, I've thrived in dynamic environments, helping startups and established companies meet their business objectives through meticulously designing, developing, testing, documenting, maintaining, and debugging impactful software solutions.`}
@@ -60,14 +60,14 @@ const Home = () => {
         {/* bg image */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* particles */}
-        <ParticlesContainer/>
+        <ParticlesContainer />
         {/* Avatar */}
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{duration: 1, ease:"easeInOut"}}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[408px] max-h-[612px]  absolute -bottom-32 lg:bottom-0 lg:right-[20%]"
         >
           <Avatar />

@@ -12,7 +12,7 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0 ">
       <Link
         href={"/work"}
-        className="transition delay-150 duration-500 ease-in-out hover:scale-105 relative w-[185px] h-[188px] flex justify-center items-center bg-circleStar bg-cover bg bg-no-repeat"
+        className="transition delay-150 duration-500 ease-in-out hover:scale-105 relative w-[185px] h-[188px] flex justify-center items-center bg-circleStar bg-cover bg bg-no-repeat z-10"
       >
         <Image
           src={"/rounded-text1.png"}
