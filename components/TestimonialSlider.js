@@ -30,11 +30,8 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 
 // icons
-import {
-  RiDoubleQuotesL,
-  RiDoubleQuotesR,
-  RiAccountPinBoxFill,
-} from "react-icons/ri";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+import { SiLivechat } from "react-icons/si";
 
 // next Image
 import Image from "next/image";
@@ -72,7 +69,7 @@ const TestimonialSlider = () => {
               <div className="flex flex-1 flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
                 <div className="mb-4">
                   <div>
-                    <RiAccountPinBoxFill className="text-4xl xl:text-6xl text-white/50 mx-auto md:mx-0 mb-2" />
+                    <SiLivechat className="text-4xl xl:text-6xl text-white/50 mx-auto md:mx-0 mb-2" />
                   </div>
                   <div className="flex items-center flex-row gap-6">
                     {/* quote icon */}
