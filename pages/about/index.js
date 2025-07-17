@@ -31,35 +31,40 @@ const aboutData = [
       {
         title: "Front-end",
         icons: [
-          <SiHtml5 />,
-          <SiCss3 />,
-          <SiReact />,
-          <SiTailwindcss />,
-          <SiReactquery />,
-          <SiRedux />,
+          <SiHtml5 key="html" />,
+          <SiCss3 key="css" />,
+          <SiReact key="react" />,
+          <SiTailwindcss key="tailwind" />,
+          <SiReactquery key="reactquery" />,
+          <SiRedux key="redux" />,
         ],
       },
       {
         title: "Back-end",
-        icons: [<SiSupabase />,  <SiMysql />],
+        icons: [<SiSupabase key="supabase" />, <SiMysql key="mysql" />],
       },
       {
         title: "Frame Works",
-        icons: [<SiNextdotjs />, <SiWordpress />],
+        icons: [<SiNextdotjs key="nextjs" />, <SiWordpress key="wordpress" />],
       },
       {
         title: "Languages",
         icons: [
-          <SiJavascript />,
-          <SiTypescript />,
-          <SiPython />,
-          <SiCplusplus />,
-          <SiDelphi />,
+          <SiJavascript key="javascript" />,
+          <SiTypescript key="typescript" />,
+          <SiPython key="python" />,
+          <SiCplusplus key="cpp" />,
+          <SiDelphi key="delphi" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<SiFigma />, <SiAdobexd />, <SiAdobephotoshop />, <SiCanva />],
+        icons: [
+          <SiFigma key="figma" />,
+          <SiAdobexd key="xd" />,
+          <SiAdobephotoshop key="photoshop" />,
+          <SiCanva key="canva" />,
+        ],
       },
     ],
   },
@@ -159,10 +164,10 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            4 years ago, I began freelancing as a developer. Since then, I've
-            done on-site and remote work for companies and agencies, cunsulted
-            for startups, and collabrated on digital products for bussiness and
-            consumer use.
+            4 years ago, I began freelancing as a developer. Since then,
+            I&apos;ve done on-site and remote work for companies and agencies,
+            cunsulted for startups, and collabrated on digital products for
+            bussiness and consumer use.
           </motion.p>
           {/* counter */}
           <div className="hidden lg:flex lg:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">

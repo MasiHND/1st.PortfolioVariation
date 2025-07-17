@@ -54,7 +54,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 capitalize text-center mb-12"
           >
-            let's <span className="text-accent">connect.</span>
+            let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
           {/* form */}
           <motion.form
@@ -103,7 +103,7 @@ const Contact = () => {
               className="flex items-center justify-center btn rounded-full ring ring-3 ring-indigo-300 max-w-[170px] px-8 transition-all duration-300 overflow-hidden hover:ring-accent gap-1 group"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-300">
-                Let's Talk
+                Let&apos;s Talk
               </span>
               <RiWechatLine className="translate-x-[120%] opacity-0 group-hover:flex group-hover:translate-x-0 group-hover:opacity-100 text-4xl group-hover:text-accent transition-all duration-500 absolute" />
             </button>
